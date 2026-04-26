@@ -5,9 +5,9 @@ from clases.curso import Curso
 import datetime
 
 if __name__=="__main__":
-    estudiante1 = Estudiante(rut="123", nombre="Rodrigo Lander", email="landersoft@gmail.com", matricula="20260101",fecha_nacimiento=datetime.datetime.strptime("2000-01-05","%Y-%m-%d"),beca=10)
+    estudiante1 = Estudiante(rut="123", nombre="Rodrigo",apellido_paterno="Lander", email="landersoft@gmail.com", matricula="20260101",fecha_nacimiento=datetime.datetime.strptime("2000-01-05","%Y-%m-%d"),beca=10)
     print(estudiante1.mostrar_info())
-    docente1 = Docente(rut="1234", nombre="Dr.Alvaro Pérez", email="aperez@ucsc.cl", especialidad="Matemáticas")
+    docente1 = Docente(rut="1234", nombre="Alvaro", apellido_paterno= "Pérez", email="aperez@ucsc.cl", especialidad="Matemáticas")
     print(docente1.mostrar_info())
 
     asignatura1 = Asignatura("MAT101", "Álgebra", 5)
