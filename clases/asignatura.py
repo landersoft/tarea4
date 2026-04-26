@@ -5,7 +5,7 @@ class Asignatura:
         self._creditos = creditos
 
     def mostrar_info(self):
-        return "Asignatura: {} ({}) - Créditos: {}".format(self.get_nombre, self.get_codigo, self.get_creditos)
+        return "Asignatura: {} ({}) - Créditos: {}".format(self.get_nombre(), self.get_codigo(), self.get_creditos())
 
     def get_codigo(self):
         return self._codigo
