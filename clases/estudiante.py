@@ -18,6 +18,9 @@ class Estudiante(Persona):
         descuento = costo_base * (self._beca / 100)
         return costo_base - descuento
 
+    def get_matricula(self):
+        return self._matricula
+
     # Polimorfismo
     def mostrar_info(self):
         return "Estudiante: {} | Matricula: {}".format(self.get_nombre(), self._matricula)
