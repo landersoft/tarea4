@@ -83,6 +83,7 @@ Archivo:
 /uml/tarea4.puml
 /uml/tarea4.png
 ```
+![diagrama](uml/tarea4.PNG)
 
 (Relación principal: herencia entre Persona → Estudiante y Docente, y asociación con Curso)
 
