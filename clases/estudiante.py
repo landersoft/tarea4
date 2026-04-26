@@ -1,8 +1,8 @@
 from clases.persona import Persona
 # Clase estudiante hereda de Persona
 class Estudiante(Persona):
-    def __init__(self, rut, nombre, email, matricula,fecha_nacimiento,beca=0):
-        super().__init__(rut, nombre, email)
+    def __init__(self, rut, nombre,apellido_paterno, email, matricula,fecha_nacimiento,beca=0):
+        super().__init__(rut, nombre,apellido_paterno, email)
         self._matricula = matricula
         self._beca = beca  # Expresado en %
         self._cursos = []

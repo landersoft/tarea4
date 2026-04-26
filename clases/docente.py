@@ -2,8 +2,8 @@ from clases.persona import Persona
 
 
 class Docente(Persona):
-    def __init__(self, rut, nombre, email, especialidad):
-        super().__init__(rut, nombre, email)
+    def __init__(self, rut, nombre, apellido_paterno, email, especialidad):
+        super().__init__(rut, nombre,apellido_paterno, email)
         self._especialidad = especialidad
 
     def asignar_curso(self, curso):
