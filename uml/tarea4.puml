@@ -1,0 +1,67 @@
+@startuml tarea4
+
+
+class Persona {
+  - _rut: str
+  - _nombre: str
+  - _email: str
+  + get_nombre(): str
+  + get_email(): str
+  + mostrar_info(): str
+}
+
+class Estudiante {
+  - _matricula: str
+  - _beca: float
+  - _cursos: list
+  + get_matricula(): str
+  + inscribir_curso(curso: Curso): void
+  + calcular_pago(): float
+  + mostrar_info(): str
+}
+
+
+class Docente {
+  - _especialidad: str
+  + asignar_curso(curso: Curso): void
+  + get_especialidad(): str
+  + mostrar_info(): str
+}
+
+
+class Asignatura {
+  - _codigo: str
+  - _nombre: str
+  - _creditos: int
+  + mostrar_info(): str
+  + get_codigo(): str
+  + get_nombre(): str
+  + get_creditos(): int
+}
+
+
+class Curso {
+  - _id: int
+  - _asignatura: Asignatura
+  - _horario: str
+  - _estudiantes: list
+  - _docente: Docente
+  - _notas: dict
+  + agregar_estudiante(estudiante: Estudiante): void
+  + registrar_nota(estudiante: Estudiante, nota: float): void
+  + evaluar_estudiante(estudiante: Estudiante): str
+}
+
+
+'HERENCIA
+
+Persona <|-- Estudiante
+Persona <|-- Docente
+
+'RELACIONES
+
+Curso --> Asignatura
+Curso --> Docente
+Curso "1" o-- "*" Estudiante
+
+@enduml
