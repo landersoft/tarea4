@@ -11,7 +11,9 @@ if __name__=="__main__":
     print(docente1.mostrar_info())
 
     asignatura1 = Asignatura("MAT101", "Álgebra", 5)
+    print(asignatura1.mostrar_info())
     curso1 = Curso(1, asignatura1, "Lunes 10:00")
+
 
     docente1.asignar_curso(curso1) #Asignar objeto curso a docente1
     estudiante1.inscribir_curso(curso1)
