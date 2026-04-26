@@ -1,11 +1,13 @@
 from clases.persona import Persona
 # Clase estudiante hereda de Persona
 class Estudiante(Persona):
-    def __init__(self, rut, nombre, email, matricula, beca=0):
+    def __init__(self, rut, nombre, email, matricula,fecha_nacimiento,beca=0):
         super().__init__(rut, nombre, email)
         self._matricula = matricula
         self._beca = beca  # Expresado en %
         self._cursos = []
+        self._fecha_nacimiento = fecha_nacimiento #tipo datetime
+
 
     def inscribir_curso(self, curso):
         self._cursos.append(curso)
