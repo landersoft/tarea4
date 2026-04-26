@@ -23,4 +23,4 @@ class Estudiante(Persona):
 
     # Polimorfismo
     def mostrar_info(self):
-        return "Estudiante: {} | Matricula: {}".format(self.get_nombre(), self._matricula)
+        return "Estudiante: {} | Matricula: {}".format(self.get_nombre(), self.get_matricula())
